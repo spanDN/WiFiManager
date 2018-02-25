@@ -802,3 +802,11 @@ String WiFiManager::toStringIp(IPAddress ip) {
   res += String(((ip >> 8 * 3)) & 0xFF);
   return res;
 }
+
+String WiFiManager::getSSID() {
+	return _ssid;
+}
+
+String WiFiManager::getPassword() {
+	return _pass;
+}
